@@ -1,0 +1,137 @@
+/* styles.css */
+
+/* Reset de margin e padding para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4; /* Cor de fundo padrão para a página */
+}
+
+/* Estilo do header */
+header {
+    background: #0703fc;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header .logo img {
+    display: inline-block;
+    width: 200px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do main */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Contêiner de formulários lado a lado */
+.form-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px; /* Espaço acima do contêiner de formulários */
+}
+
+.form-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilos específicos para cada formulário */
+.login-form,
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-section input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-section button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.form-section button:hover {
+    background: #555;
+}
+
+/* Estilo do footer */
+footer {
+    background: #0703fc;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
